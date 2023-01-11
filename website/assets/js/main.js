@@ -6,7 +6,7 @@ const navMenu = document.getElementById('nav-menu'),
 /*===== MENU SHOW =====*/
 /* Validate if constant exists */
 if (navToggle) {
-    navToggle.addEventListener("click", () => {
+    navToggle.addEventListener('click', () => {
         navMenu.classList.add('show-menu')
     })
 }
@@ -14,7 +14,7 @@ if (navToggle) {
 /*===== MENU HIDDEN =====*/
 /* Validate if constant exists */
 if (navClose) {
-    navClose.addEventListener("click", () => {
+    navClose.addEventListener('click', () => {
         navMenu.classList.remove('show-menu')
     })
 }
@@ -49,7 +49,24 @@ skillsHeader.forEach((el) => {
 })
 
 /*==================== QUALIFICATION TABS ====================*/
+const tabs = document.querySelectorAll('[data-target]'),
+    tabContents = document.querySelectorAll('[data-content]')
 
+tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+        const target = document.querySelector(tab.dataset.target)
+
+        tabContents.forEach(tabContent => {
+            tabContent.classList.remove('qualification_active')
+        })
+        target.classList.add('qualification_active')
+
+        tab.forEach(tab => {
+            tab.classList.remove('qualification_active')
+        })
+        tab.classList.add('qualification_active')
+    })
+})
 
 /*==================== SERVICES MODAL ====================*/
 
