@@ -302,7 +302,7 @@ img {
 }
 
 .home_blob-img{
-  width: 170px;
+  width: 140px;
 }
 
 .home_data{
@@ -517,7 +517,7 @@ img {
 }
 
 .skills_js{
-  width: 60%;
+  width: 90%;
 }
 
 .skills_react{
@@ -525,7 +525,7 @@ img {
 }
 
 .skills_materialui{
-  width: 85%;
+  width: 50%;
 }
 
 .skills_node{
@@ -533,23 +533,23 @@ img {
 }
 
 .skills_firebase{
-  width: 85%;
+  width: 65%;
 }
 
 .skills_python{
-  width: 85%;
+  width: 70%;
 }
 
 .skills_sql{
-  width: 85%;
+  width: 80%;
 }
 
 .skills_figma{
-  width: 85%;
+  width: 70%;
 }
 
 .skills_canva{
-  width: 85%;
+  width: 90%;
 }
 
 .skills_miro{
@@ -557,7 +557,7 @@ img {
 }
 
 .skills_photoshop{
-  width: 85%;
+  width: 75%;
 }
 
 .skills_close .skills_list{
